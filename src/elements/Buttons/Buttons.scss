@@ -1,0 +1,32 @@
+@import '../../colors.scss';
+
+.ctaBtn{
+    font-size: 1.8rem;
+    background: $mainGreen;
+    color: white;
+    outline: none;
+    border: none;
+    padding: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    &:hover{
+        background: $thirdGreen;
+        // background: radial-gradient(circle, transparent 1%, rgb(3, 172, 14) 1%) center center / 15000% rgb(3, 172, 14);
+    }     
+}
+
+
+.ctbBtn{
+    font-size: 1.8rem;
+    background: $thirdBlack;
+    color: white;
+    outline: none;
+    border: none;
+    padding: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    &:hover{
+        background: $mainGrey;
+        // background: radial-gradient(circle, transparent 1%, rgb(3, 172, 14) 1%) center center / 15000% rgb(3, 172, 14);
+    }     
+}

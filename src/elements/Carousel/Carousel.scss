@@ -1,0 +1,20 @@
+@import '../../colors.scss';
+
+.sliderButton{
+    border-radius: 50%;
+    border: 1px solid $fifthBlack;
+    color: $secondBlack;
+    outline: none;
+    height: 2.2rem;
+    box-shadow: rgba(49, 53, 59, 0.12) 0px 1px 6px 0px;
+
+    .MuiSvgIcon-root{
+        font-size: 2rem;
+        width: 2rem;
+        height: 2rem;
+    }
+}
+
+.sliderButton.back{ transform: translateX(5rem);}
+
+.sliderButton.forward{ transform: translateX(-5rem);}

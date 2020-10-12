@@ -1,0 +1,106 @@
+{
+    "products": [ 
+      {
+        "id": "11854078013954528",
+        "sku": "11854078013954528",
+        "title": "Danger Knife Grey T-Shirt",
+        "description": "Danger Knife Grey",
+        "availableSizes": ["XXL", "M", "L"],
+        "price": 149000,
+        "images": ["11854078013954528_XXL","11854078013954528_M", "11854078013954528_L"],
+        "rate" : 4.4
+      },
+  
+      {
+        "id": "876661122392077",
+        "sku": "876661122392077",
+        "title": "White DGK Script Tee",
+        "description": "White DGK Script",
+        "availableSizes": ["XS", "M", "L"],
+        "price": 138700,
+        "images": ["876661122392077_XS", "876661122392077_M", "876661122392077_L"],
+        "rate" : 4.1
+      },
+  
+      {
+        "id": "10547961582846888",
+        "sku": "10547961582846888",
+        "title": "Tso 3D Short Sleeve T-Shirt A",
+        "description": "Tso 3D Short Sleeve",
+        "availableSizes": ["XS", "L"],
+        "price": 109500,
+        "images":["10547961582846888_XS", "10547961582846888_L"],
+        "rate" : 4.3
+      },
+  
+      {
+        "id": "6090484789343891",
+        "sku": "6090484789343891",
+        "title": "Man Tie Dye Cinza Grey T-Shirt",
+        "description": "Man Tie Dye Cinza Grey",
+        "availableSizes": ["XL", "XXL"],
+        "price": 499600,
+        "images":["6090484789343891_XXL", "6090484789343891_XL"],
+        "rate" : 4.7
+      },
+    
+      {
+        "id": "5619496040738316",
+        "sku": "5619496040738316",
+        "title": "Tso 3D Black T-Shirt",
+        "description": "",
+        "availableSizes": ["red", "blue", "black"],
+        "style": "Azul escuro",
+        "price": 18555,
+        "images":["5619496040738316_red", "5619496040738316_blue", "5619496040738316_black" ],
+        "rate" : 4.5
+      },
+
+      {
+        "id": "18644119330491310",
+        "sku": "18644119330491310",
+        "title": "Tso 3D Black T-Shirt",
+        "description": "A smooth, nice, awesome version of Tso 3D Black T-Shirt. Capable to wear.",
+        "availableSizes": ["S", "M", "L"],
+        "style": "Azul escuro",
+        "price": 18555,
+        "images":["18644119330491310_S", "18644119330491310_M", "18644119330491310_L"],
+        "rate" : 4.5
+      },
+
+      {
+        "id": "18532669286405344",
+        "sku": "18532669286405344",
+        "title": "Man Tie Dye Cinza Grey T-Shirt",
+        "description": "Man Tie Dye Cinza Grey",
+        "availableSizes": ["M", "L"],
+        "price": 699600,
+        "images":["18532669286405344_M", "18532669286405344_L"],
+        "rate" : 4.7
+      },
+
+      {
+        "id": "9197907543445676",
+        "sku": "9197907543445676",
+        "title": "Man Tie Dye Cinza Grey T-Shirt",
+        "description": "Man Tie Dye Cinza Grey",
+        "availableSizes": ["XL", "XXL"],
+        "price": 699600,
+        "images":["9197907543445676_XL", "9197907543445676_XXL"],
+        "rate" : 4.7
+      },
+
+      {
+        "id": "11600983276356164",
+        "sku": "11600983276356164",
+        "title": "Tso 3D Black T-Shirt",
+        "description": "A smooth, nice, awesome version of Tso 3D Black T-Shirt. Capable to wear.",
+        "availableSizes": ["S", "M", "L"],
+        "style": "Azul escuro",
+        "price": 18555,
+        "images":["11600983276356164_S", "11600983276356164_M", "11600983276356164_L"],
+        "rate" : 4.5
+      }
+
+    ]
+  }

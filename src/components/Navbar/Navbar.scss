@@ -1,0 +1,92 @@
+@import '../../App.scss';
+
+.navbar{
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    padding: 1rem 2rem 1rem 2rem;
+    z-index: 100;
+    background: white;
+    width: 100%;
+    max-width: 1300px;
+    box-sizing: border-box;    
+    &__logo{
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+        img{
+            width: 3.5rem;
+            height: 3.5rem;
+        }
+    }
+
+    &__search{
+        flex: 1;
+    }
+
+    &__navigation{
+        // flex: 1;
+        margin-left: auto;
+        ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+        ul>a.active{
+            color: $mainGreen;
+            .menu{
+                border-right: 2px solid $mainGreen;
+            }
+        }
+        ul>a{
+            display: flex;
+            flex-direction: row;
+            align-items:center;
+            font-size: 1.6rem;
+            padding-left: calc(3rem - 2px);
+            text-decoration: none;
+            color: $secondBlack;
+            font-weight: 600;
+
+            .iconWrapper{
+                padding: .5rem;
+                height: 2.5rem;
+            }
+            .MuiSvgIcon-root{
+                font-size: 2.4rem;
+                width: 2.4rem;
+                height: 2.4rem;
+            }
+            .menu{
+                border-right: 2px solid $secondBlack;
+                line-height: 1.6rem !important;
+                padding-right: 3rem;
+                white-space: nowrap;
+            }
+        }
+
+    }
+}
+
+
+@media screen and (max-width: 500px){
+    .navbar__navigation{
+        display: none;       
+    }
+}
+
+@media screen and (max-width: 900px){
+    .menu{
+        display: none;
+    }
+    .navbar__navigation ul>a{
+        padding-left: 1rem;
+    }
+}
+
+@media screen and (min-width: 900px){
+    .navbar__navigation ul>a .iconWrapper.noncart{
+        display: none;
+    }
+}
+

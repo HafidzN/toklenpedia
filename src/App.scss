@@ -1,0 +1,83 @@
+$mainGreen : rgb(11, 175, 22); //0baf16
+$secondGreen   : rgb(3, 172, 14); //03ac0e
+$thirdreen   : rgb(3, 151, 12);
+$fourthGreen : rgb(66, 181, 73);
+$mainRed     : rgb(214, 0, 28);
+$secondRed   : rgb(239, 20, 74);
+$thirdRed    : rgb(253, 215, 206);
+$mainBlack   : rgb(49, 53, 59);
+$secondBlack : rgba(49, 53, 59, 0.96); //#31353bf3
+$thirdBlack  : rgba(49, 53, 59, 0.68);
+$fourthBlack : rgba(49, 53, 59, 0.44);
+$fifthBlack  : rgba(49, 53, 59, 0.12);
+$siBlack     : rgba(0, 0, 0, 0.7);
+$mainGrey    : rgb(224, 224, 224);
+$secondGrey  : rgb(219, 222, 226);
+$thirdGrey   : rgb(229, 231, 233);
+$fourthGrey  : rgb(239, 239, 239);
+$fifthGrey   : rgb(241, 241, 241);
+$hover1      : rgb(241, 251, 184);
+$hover2      : rgb(246, 247, 248);
+$hover3      : rgb(219, 245, 221);
+$hover4      : rgb(243, 244, 245);
+$hover5      : rgb(243, 243, 243);
+$mainOrange  : #f44336;
+
+
+* { margin: 0; box-sizing: border-box; }
+
+html {
+    font-size: 10px;
+    font-family: "open sans", tahoma, sans-serif;    
+}
+
+@mixin flexing ($flexDirection,  $justifyContent, $alignItems ){
+    display: flex;
+    flex-direction: $flexDirection;
+    justify-content: $justifyContent;
+    align-items: $alignItems;
+}
+
+.app{
+    display: flex;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100vh;
+
+    flex-direction: column;
+
+    .app__content{
+        padding: 6rem 2rem 2rem 2rem;
+        flex: 1;
+    }
+
+    .shopPage{
+        display: flex;
+        flex-direction: row;;
+    }
+
+    .navbarWrapper{
+        width: 100vw;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 0rem;
+        height: 6.1rem; 
+        z-index: 100;    
+        box-shadow: #31353b1f 0px 1px 6px 0px;
+    }
+
+}
+
+
+
+ul{ padding: 0 }
+
+@media screen and (max-width: 500px){
+    .app{   
+        .app__content{
+            padding: 5rem 2rem 2rem 2rem;
+        }
+    }   
+}

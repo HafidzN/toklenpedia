@@ -1,0 +1,49 @@
+@import '../../colors.scss';
+
+h1.shopTitle{
+    margin: 1rem 0;
+    font-size: 2.5rem;
+    padding-left: .5rem;
+}
+
+.productList{
+    display: flex;
+    flex-wrap: wrap;
+
+    .product{
+        max-width: 40rem;
+    }
+}
+
+.productList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+    gap: .5rem;
+    // padding: 1.5rem;
+
+    img{
+        &:hover{
+            transform: scale(1.04);
+        }
+    }
+  }
+  .productList .product {
+    width: 100%;
+    display: block;
+    // -webkit-filter: grayscale(1);
+    // filter: grayscale(1);
+    transition: all 100ms ease-out;
+  }
+
+//   .productList .product:hover {
+//     transform: scale(1.04);
+    // -webkit-filter: grayscale(0);
+    // filter: grayscale(0);
+// }
+
+@media screen and (min-width: 768px){
+    .productList{
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        gap: 1rem;
+    }
+}

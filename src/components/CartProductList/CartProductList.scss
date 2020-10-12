@@ -1,0 +1,108 @@
+@import '../../colors.scss';
+
+.cartProductList{
+    padding: 2rem 0 ;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid $secondBlack;
+}
+
+.cartProduct{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+    &__imageWrapper{
+        position: relative;
+        width: 50%;
+        border-radius: 2rem;
+        border: 1px solid $mainGreen;
+        flex: .3;
+        img{
+            width: 100%;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 2rem;
+        }
+    }
+
+    &__actions{
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        padding: 1rem;
+
+        &__productInfo{
+            flex: 1;
+            .title{
+                font-size: 1.4rem;
+            }
+            .price{
+                font-size: 1.4rem;
+                color: $mainOrange;
+                font-weight: 600;
+            }
+        }
+        &__quantity{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+    }
+
+    &__imageWrapper:after {
+        content: "";
+        display: block;
+        padding-bottom: 100%;
+      }
+}
+
+.react-numeric-input{
+    >input{
+        height: 3rem !important;
+        border-radius: 1rem;
+        border: 1px solid $secondGreen;
+        outline: none;
+        width: 12rem;
+    }
+}
+
+
+@media screen and (max-width: 500px){
+ .cartProductList{
+     padding: 1rem 0 0 0 !important;
+ }
+ .cartProduct{
+     &__imageWrapper{
+         flex: .5;
+     }
+
+     &__actions{
+         flex-direction: column;
+     }
+ }
+ 
+ .react-numeric-input {
+    >input{
+        padding-right: 3.4ex;
+        box-sizing: border-box;
+        height: 3rem;
+        border: 1px solid $fourthGreen;
+        border-radius: 1rem;
+        font-size: 1.6rem !important;
+        width: 100% !important;
+        width: unset;
+    }
+    b{
+        background: $mainGreen !important;
+        color: white !important;
+        border-radius: 1rem !important;
+
+        i{
+            background: white !important;
+        }
+    }
+}
+ 
+}

@@ -1,0 +1,39 @@
+@import '../../colors.scss';
+.previewer{
+    flex: 0.68;
+    padding: 7rem 0rem 1rem 2rem;
+
+    .cardHolder{
+        box-sizing: border-box;
+        position: fixed;
+        width: calc(40.4% - 2rem);
+        max-width: 50rem;
+
+        .productName, .price{
+            font-size: 2em !important;
+        }
+
+        .productName{
+            height: 3rem;
+        }
+    }
+
+    .closeBtn{
+        position: absolute;
+        left: 1.5rem;
+        top: 2rem;
+        z-index: 100;
+        cursor: pointer;
+    }
+
+    .MuiSvgIcon-root{
+        font-size: 4rem;
+        color: $mainGreen;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .previewer{
+        display: none;
+    }
+}
