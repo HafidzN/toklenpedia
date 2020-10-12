@@ -8,7 +8,7 @@ In the project directory, you can run:
 
 then run the server
 
-### `json-server public/json --port 700`
+### `json-server public/db.json --port 7000`
 
 and then run the client
 
